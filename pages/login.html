@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synapse - Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: black;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .logo-text {
+      position: absolute;
+      top: 40px;
+      left: 80px;
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    .card {
+      background: #3D3D3D;
+      padding: 40px;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .card input {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 18px;
+      border: 1px solid black;
+      font-size: 18px;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 18px;
+      font-size: 24px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .signup-prompt {
+      margin-top: 20px;
+      font-size: 18px;
+      color: white;
+    }
+
+    .signup-prompt span:last-child {
+      color: #CC88EC;
+      font-weight: 800;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: white;
+      margin: 0 10px;
+    }
+
+    .divider-text {
+      font-size: 18px;
+      color: white;
+    }
+
+    .google-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      color: black;
+      padding: 12px;
+      border-radius: 18px;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 18px;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .google-button img {
+      width: 32px;
+      height: 32px;
+    }
+    .signup{
+        text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-text">Synapse</div>
+
+  <div class="card">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+
+    <div class="signup-prompt">
+      <span>If you don’t have an account?</span>
+      <span><a href="index.html" class="signup">Signup</a></span>
+    </div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-text">Or</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="google-button">
+      <img src="download.png" alt="Google logo" />
+      Login with Google
+    </div>
+  </div>
+</body>
+</html>
